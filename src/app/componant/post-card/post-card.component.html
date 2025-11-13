@@ -1,0 +1,34 @@
+<!-- <div class="card">
+  <div class="card-header">
+    <h2 class="m-0">{{ postobje.title }}</h2>
+  </div>
+
+  <div class="card-body">
+    {{ postobje.body}}
+  </div>
+
+  <div class="card-footer justify-content-between">
+    <button class="btn btn-sm btn-outline-info">Edit</button>
+    <button class="btn btn-sm btn-outline-danger">Remove</button>
+  </div>
+</div> -->
+
+
+<div class="row">
+    <div class="col-md-4 mb-3" *ngFor=" let post of forpersondata">
+        <div class="card h-100">
+        <div class="card-header">
+            <h2>{{post.title}}</h2>
+        </div>
+        <div class="card-body">
+            {{post.body}}
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <button class="btn btn-sm btn-outline-info">Edit</button>
+            <button class="btn btn-sm btn-outline-danger">Remove</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+
